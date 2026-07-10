@@ -4,11 +4,9 @@
   <remote name="bitstash" fetch="https://github.com/" />
   <remote name="niyush" fetch="https://github.com/" />
   <remote name="lineage" fetch="https://github.com/" />
-  <remote name="shyam" fetch="https://github.com/" />
   <project path="device/xiaomi/warm" name="Shyam-vadgama/device_xiaomi_warm" remote="shyam" revision="pixel" />
   <project path="vendor/xiaomi/warm" name="bitstash-io/vendor_xiaomi_warm" remote="bitstash" revision="lineage-23.2" />
   <project path="device/xiaomi/warm-kernel" name="Niyush-04/warm_kernel" remote="niyush" revision="hos3" />
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="lineage" revision="lineage-23.2" />
   <project path="hardware/qcom-caf/common" name="Shyam-vadgama/android_hardware_qcom-caf_common" remote="shyam" revision="lineage-23.2" />
 </manifest>
-XMLEOF
