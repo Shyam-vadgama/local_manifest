@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="shyam" fetch="https://github.com/" />
-  <remote name="bitstash" fetch="https://github.com/" />
-  <remote name="niyush" fetch="https://github.com/" />
-  <remote name="lineage" fetch="https://github.com/" />
+<!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
-  <remove-project path="hardware/qcom-caf/common" />
+    <!-- Remotes -->
+    <remote name="bitstash-io" fetch="https://github.com/bitstash-io" clone-depth="1" />
+    <remote name="Shyam-vadgama" fetch="https://github.com/Shyam-vadgama" clone-depth="1" />
+    <remote name="niyush-04" fetch="https://github.com/niyush-04" clone-depth="1" />
 
-  <project path="hardware/qcom-caf/common" name="Shyam-vadgama/android_hardware_qcom-caf_common" remote="shyam" revision="lineage-23.2" />
-  <project path="device/xiaomi/warm" name="Niyush-04/device_xiaomi_warm" remote="Niyush" revision="lineage-23.2" />
-  <project path="vendor/xiaomi/warm" name="bitstash-io/vendor_xiaomi_warm" remote="bitstash" revision="lineage-23.2" />
-  <project path="device/xiaomi/warm-kernel" name="Niyush-04/warm_kernel" remote="niyush" revision="hos3" />
-  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="lineage" revision="lineage-23.2" />
+    <!-- Removals -->
+    <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
+
+    <!-- Repos -->
+    <!-- Device -->
+    <project path="device/xiaomi/warm-kernel" name="warm_kernel" remote="niyush-04" revision="hos3" />
+    <project path="device/xiaomi/warm" name="device_xiaomi_warm" remote="niyush-04" revision="lineage-23.2" />
+
+    <!-- Device - Common -->
+
+    <!-- Kernel -->
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/warm" name="vendor_xiaomi_warm" remote="bitstash-io" revision="lineage-23.2" />
+
+    <!-- Vendor - Common -->
+
+    <!-- Hardware -->
+    <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Shyam-vadgama" revision="lineage-23.2" />
+
 </manifest>
