@@ -10,6 +10,17 @@
 
     <!-- Removals -->
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8450" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8550" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8750" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8250" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8350" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8150" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sdm845" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sdm660" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_msm8998" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_msm8953" />
+    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8650_6_6" />
 
     <!-- Repos -->
     <!-- Device -->
