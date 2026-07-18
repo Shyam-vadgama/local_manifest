@@ -29,6 +29,6 @@
     <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Shyam-vadgama" revision="lineage-23.2" />
 
     <!-- Other Repos -->
-    <project path="lineage-23.2" name="android_device_qcom_sepolicy_vndr" remote="LineageOS" />
+    <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="LineageOS" revision="lineage-23.0-caf-sm8650" />
 
 </manifest>
