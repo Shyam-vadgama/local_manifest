@@ -3,6 +3,7 @@
 <!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
     <!-- Remotes -->
+    <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
     <remote name="bitstash-io" fetch="https://github.com/bitstash-io" clone-depth="1" />
     <remote name="Shyam-vadgama" fetch="https://github.com/Shyam-vadgama" clone-depth="1" />
     <remote name="niyush-04" fetch="https://github.com/niyush-04" clone-depth="1" />
@@ -26,5 +27,8 @@
 
     <!-- Hardware -->
     <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Shyam-vadgama" revision="lineage-23.2" />
+
+    <!-- Other Repos -->
+    <project path="lineage-23.2" name="android_device_qcom_sepolicy_vndr" remote="LineageOS" />
 
 </manifest>
