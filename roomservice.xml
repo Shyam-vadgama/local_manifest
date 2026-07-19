@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
-    <!-- Remotes -->
     <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
     <remote name="bitstash-io" fetch="https://github.com/bitstash-io" clone-depth="1" />
     <remote name="Shyam-vadgama" fetch="https://github.com/Shyam-vadgama" clone-depth="1" />
     <remote name="niyush-04" fetch="https://github.com/niyush-04" clone-depth="1" />
 
-    <!-- Removals -->
+    <!-- Remove default qcom-caf common (re-added from Shyam-vadgama fork) -->
     <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8450" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8550" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8750" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8250" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8350" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8150" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sdm845" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sdm660" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_msm8998" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_msm8953" />
-    <remove-project name="LineageOS/android_hardware_qcom-caf_sm8650_6_6" />
 
-    <!-- Repos -->
+    <!-- Remove ALL SoC-specific qcom-caf to stop duplicate module errors -->
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+    <remove-project name="LineageOS/android_hardware_qcom_audio-ar" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_agm" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_arpal-lx" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_dataipa" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_display-core" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_display-intf" />
+
     <!-- Device -->
     <project path="device/xiaomi/warm-kernel" name="warm_kernel" remote="niyush-04" revision="hos3" />
     <project path="device/xiaomi/warm" name="device_xiaomi_warm" remote="niyush-04" revision="lineage-23.2" />
 
-    <!-- Device - Common -->
-
-    <!-- Kernel -->
-
     <!-- Vendor -->
     <project path="vendor/xiaomi/warm" name="vendor_xiaomi_warm" remote="bitstash-io" revision="lineage-23.2" />
 
-    <!-- Vendor - Common -->
-
-    <!-- Hardware -->
+    <!-- Hardware: common (custom fork) -->
     <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Shyam-vadgama" revision="lineage-23.2" />
 
-    <!-- Other Repos -->
-    <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="LineageOS" revision="lineage-23.0-caf-sm8650" />
+    <!-- Hardware: sm8650 only (pitti platform for warm) -->
+    <project path="hardware/qcom-caf/sm8650/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="LineageOS/android_hardware_qcom_audio-ar" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/dataipa" name="LineageOS/android_vendor_qcom_opensource_dataipa" revision="lineage-23.2-caf-sm8650" />
+    <project path="hardware/qcom-caf/sm8650/display" name="LineageOS/android_hardware_qcom_display" revision="lineage-23.2-caf-sm8650" />
 
 </manifest>
