@@ -32,6 +32,7 @@
     <!-- Hardware: common (custom fork with sepolicy symlink) -->
     <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Shyam-vadgama" revision="lineage-23.2">
         <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
     </project>
 
     <!-- Hardware: sm8650 only (pitti platform for warm) -->
