@@ -36,5 +36,4 @@
   <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" revision="lineage-23.2-caf-sm8650" />
   <project path="hardware/qcom-caf/sm8650/dataipa" name="LineageOS/android_vendor_qcom_opensource_dataipa" remote="lineage" revision="lineage-23.2-caf-sm8650" />
   <project path="hardware/qcom-caf/sm8650/display" name="LineageOS/android_hardware_qcom_display" remote="lineage" revision="lineage-23.2-caf-sm8650" />
-  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-23.2" />
 </manifest>
