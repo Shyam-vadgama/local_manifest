@@ -21,7 +21,7 @@
     <remove-project name="LineageOS/android_vendor_qcom_opensource_display-core" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_display-intf" />
     <!-- Device -->
-    <project path="device/xiaomi/warm-kernel" name="warm_kernel" remote="Shyam-vadgama" revision="main" />
+    <project path="device/xiaomi/warm-kernel" name="warm-kernel" remote="Shyam-vadgama" revision="main" />
     <project path="device/xiaomi/warm" name="device_xiaomi_warm" remote="Shyam-vadgama" revision="lineage-23.2" />
 
     <!-- Vendor -->
