@@ -22,9 +22,12 @@
     <remove-project name="LineageOS/android_vendor_qcom_opensource_display-intf" />
 
 
+    <!-- warm-kernel hatao, sirf device tree rakho -->
+    <remove-project name="LineageOS/android_packages_modules_UprobeStats" />
+
     <!-- Device -->
-   <project path="device/xiaomi/warm-kernel" name="warm-kernel" remote="Shyam-vadgama" revision="main" />
-   <project path="device/xiaomi/warm" name="device_xiaomi_warm" remote="Shyam-vadgama" revision="lineage-23.2" />
+    
+    <project path="device/xiaomi/warm" name="device_xiaomi_warm" remote="Shyam-vadgama" revision="lineage-23.2" />
 
     <!-- Vendor -->
     <project path="vendor/xiaomi/warm" name="vendor_xiaomi_warm" remote="Shyam-vadgama" revision="lineage-23.2" />
@@ -34,7 +37,6 @@
         <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
     </project>
-    
     <!-- Hardware: sm8650 only (pitti platform for warm) -->
     <project path="hardware/qcom-caf/sm8650/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" revision="lineage-23.2-caf-sm8650" />
     <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" revision="lineage-23.2-caf-sm8650" />
